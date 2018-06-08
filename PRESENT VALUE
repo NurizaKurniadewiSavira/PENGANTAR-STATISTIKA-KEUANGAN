@@ -1,0 +1,16 @@
+PV <- function(num, A, i, t, m=TRUE)
+  switch(num, 
+         satu = {
+           tunggal = A/(1+i*t)
+           print(tunggal)
+         },
+         dua = {
+           majemuk = A*(1+i/m)^(-m*t)
+           print(majemuk)
+         },
+         tiga = {
+           kontinu = A*exp(-i*t)
+           print(kontinu)
+         }
+  )
+#A:akumulasi i:modal t:tahun m:banyak bayar

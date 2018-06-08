@@ -1,0 +1,16 @@
+akumulasipilihan <- function(num, k, t, i, m=TRUE)
+  switch(num, 
+         satu = {
+           tunggal = k*(1+i*t)
+           print(tunggal)
+         },
+         dua = {
+           majemuk = k*(1+i/m)^(m*t)
+           print(majemuk)
+         },
+         tiga = {
+           kontinu = k*exp(i*t)
+           print(kontinu)
+         }
+  )
+#k:modal i:bunga t:tahun m:banyak bayar
